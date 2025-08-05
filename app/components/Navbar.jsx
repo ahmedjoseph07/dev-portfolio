@@ -74,7 +74,7 @@ const Navbar = () => {
 
                 <ul
                     ref={sideMenuRef}
-                    className="flex flex-col md:hidden gap-4 py-20 px-10 fixed top-0 bottom-0 w-64 z-50 h-screen -right-64 bg-gray-100 transition duration-500">
+                    className="flex flex-col md:hidden gap-4 py-20 px-10 fixed top-0 bottom-0 w-64 z-50 h-screen -right-64 bg-gray-500 transition duration-500">
                     <div
                         className="absolute right-6 top-6 "
                         onClick={closeMenu}>

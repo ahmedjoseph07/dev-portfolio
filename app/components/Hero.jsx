@@ -19,7 +19,7 @@ const Hero = () => {
             <h3 className="flex animate-pulse flex-wrap items-center justify-center gap-2 text-lg xs:text-xl sm:text-2xl font-medium">
                 <Hand className="text-yellow-500 w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
                 Hello, I am
-                <span className="font-extrabold animate-bounce">
+                <span className="font-extrabold">
                     JOSEPH AHMED
                 </span>
             </h3>
