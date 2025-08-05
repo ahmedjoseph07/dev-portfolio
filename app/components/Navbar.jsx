@@ -1,50 +1,47 @@
 import { assets } from "@/assets/assets";
 import React, { useRef } from "react";
-import Logo from "./Logo";
 import { Menu, Moon, UserRoundSearch, X } from "lucide-react";
 
 const Navbar = () => {
-
     const sideMenuRef = useRef();
-    // console.log(sideMenuRef.current)
-    const openMenu = ()=>{
+    const openMenu = () => {
         sideMenuRef.current.style.transform = `translateX(-16rem)`;
-    }
-    const closeMenu = ()=>{
+    };
+    const closeMenu = () => {
         sideMenuRef.current.style.transform = `translateX(16rem)`;
-    }
+    };
 
     return (
         <>
-            <nav className="w-full fixed px-5 lg:px-8 xl:px-10 py-4 flex items-center justify-between z-50">
-                <a href="#top">
-                    <Logo className="w-28 h-28 cursor-pointer mr-14" />
-                </a>
-                <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-md bg-opacity-50">
+            <nav className="w-full backdrop-blur-md fixed px-5 lg:px-8 xl:px-10 py-4 flex items-center justify-end md:justify-between  z-50 md:border-b md:border-dashed md:border-gray-500">
+                
+                <ul className="hidden sm:flex justify-center items-center gap-5 lg:gap-8  px-6 sm:px-8 lg:px-12 py-2.5 ">
                     <li>
-                        <a className="font-Ovo" href="#top">
+                        <a
+                            className="font-Ovo hover:text-gray-500"
+                            href="#top">
                             Home
                         </a>
-                        <p></p>
                     </li>
                     <li>
-                        <a className="font-Ovo" href="#about">
+                        <a
+                            className="font-Ovo hover:text-gray-500"
+                            href="#about">
                             About Me
                         </a>
                     </li>
                     <li>
-                        <a className="font-Ovo" href="#services">
+                        <a
+                            className="font-Ovo hover:text-gray-500"
+                            href="#services">
                             Services
                         </a>
                     </li>
                     <li>
-                        <a className="font-Ovo" href="#projects">
+                        <a
+                            className="font-Ovo hover:text-gray-500"
+                            href="#projects">
                             My Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a className="font-Ovo" href="#contact">
-                            Contact Me
                         </a>
                     </li>
                 </ul>
@@ -55,7 +52,7 @@ const Navbar = () => {
                     </button>
                     <a
                         href="#contact"
-                        className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">
+                        className="hidden md:flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 border border-gray-400 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition text-sm sm:text-base">
                         Contact
                         <UserRoundSearch />
                     </a>
@@ -67,9 +64,11 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
 
-                <ul ref={sideMenuRef} className="flex flex-col md:hidden gap-4 py-20 px-10 fixed top-0 bottom-0 w-64 z-50 h-screen -right-64 bg-rose-50 transition duration-500">
-                    <div className="absolute right-6 top-6" onClick={closeMenu}>
-                        <X className="w-5 cursor-pointer"/>
+                <ul
+                    ref={sideMenuRef}
+                    className="flex flex-col md:hidden gap-4 py-20 px-10 fixed top-0 bottom-0 w-64 z-50 h-screen -right-64 bg-gray-100 transition duration-500">
+                    <div className="absolute right-6 top-6 " onClick={closeMenu}>
+                        <X className="w-5 cursor-pointer" />
                     </div>
                     <li>
                         <a className="font-Ovo" onClick={closeMenu} href="#top">
@@ -77,22 +76,34 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a className="font-Ovo" onClick={closeMenu} href="#about">
+                        <a
+                            className="font-Ovo"
+                            onClick={closeMenu}
+                            href="#about">
                             About Me
                         </a>
                     </li>
                     <li>
-                        <a className="font-Ovo" onClick={closeMenu} href="#services">
+                        <a
+                            className="font-Ovo"
+                            onClick={closeMenu}
+                            href="#services">
                             Services
                         </a>
                     </li>
                     <li>
-                        <a className="font-Ovo" onClick={closeMenu} href="#projects">
+                        <a
+                            className="font-Ovo"
+                            onClick={closeMenu}
+                            href="#projects">
                             My Projects
                         </a>
                     </li>
                     <li>
-                        <a className="font-Ovo" onClick={closeMenu} href="#contact">
+                        <a
+                            className="font-Ovo"
+                            onClick={closeMenu}
+                            href="#contact">
                             Contact Me
                         </a>
                     </li>

@@ -7,22 +7,17 @@ const outfit = Outfit({
     variable: "--font-outfit", 
 });
 
-const ovo = Ovo({
-    subsets: ["latin"],
-    weight: ["400"],
-    variable: "--font-ovo",
-});
 
 export const metadata = {
-    title: "Portfolio - JOSEPH AHMED",
+    title: "Dev-Portfolio",
     description: "Developer Portfolio of JOSEPH AHMED",
 };
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className="scroll-smooth">
             <body
-                className={`${outfit.variable} ${ovo.variable} antialiased`}>
+                className={`${outfit.variable} bg-gradient-to-bl from-black-500 via-blue-50 to-white antialiased leading-6 overflow-x-hidden`}>
                 {children}
             </body>
         </html>
