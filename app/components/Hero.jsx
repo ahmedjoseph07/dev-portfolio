@@ -13,13 +13,15 @@ const Hero = () => {
                     alt="profile_img"
                     className="rounded-full animate cursor-pointer w-24 xs:w-28 sm:w-36 md:w-40 border-6 border-gray-400 shadow-lg"
                 />
-                <span className="absolute -bottom-0 right-1 animate-ping bg-green-500 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full border-2 border-white"></span>
+                <span className="absolute -bottom-0 right-1 animate-ping bg-green-500 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full border-2 border-none"></span>
             </div>
 
             <h3 className="flex animate-pulse flex-wrap items-center justify-center gap-2 text-lg xs:text-xl sm:text-2xl font-medium">
                 <Hand className="text-yellow-500 w-5 h-5 sm:w-6 sm:h-6 animate-bounce" />
                 Hello, I am
-                <span className="font-extrabold text-gray-900 animate-bounce">JOSEPH AHMED</span>
+                <span className="font-extrabold animate-bounce">
+                    JOSEPH AHMED
+                </span>
             </h3>
 
             <h1 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-snug hover:scale-[1.01] transition duration-300 cursor-pointer">
@@ -54,14 +56,13 @@ const Hero = () => {
                 <a
                     href="https://github.com/ahmedjoseph07"
                     target="_blank"
-                    className="flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 bg-black text-white rounded-xl hover:bg-gray-800 transition text-sm sm:text-base">
-                    My Github{" "}
-                    <Github className="w-4 h-4 sm:w-5 sm:h-5" />
+                    className="flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 bg-black text-white rounded-xl hover:shadow-2xl shadow-indigo-500/30 hover:scale-[1.02] duration-300 transition text-sm sm:text-base">
+                    My Github <Github className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
                 <a
                     href="/resume.pdf"
                     download
-                    className="flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 border border-gray-400 rounded-xl hover:bg-gray-100 transition text-sm sm:text-base">
+                    className="flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 border border-gray-400  rounded-xl hover:shadow-2xl shadow-indigo-500/30 hover:scale-[1.02] duration-300 transition text-sm sm:text-base">
                     Resume <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                 </a>
             </div>

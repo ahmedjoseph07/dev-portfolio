@@ -1,9 +1,16 @@
 import { assets } from "@/assets/assets";
-import React, { useRef } from "react";
-import { Menu, Moon, UserRoundSearch, X } from "lucide-react";
+import React, { useEffect, useRef, useState } from "react";
+import { Menu, Moon, Sun, UserRoundSearch, X } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
+    const { theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
     const sideMenuRef = useRef();
+
+    useEffect(() => setMounted(true), []);
+    if (!mounted) return null;
+
     const openMenu = () => {
         sideMenuRef.current.style.transform = `translateX(-16rem)`;
     };
@@ -14,12 +21,9 @@ const Navbar = () => {
     return (
         <>
             <nav className="w-full backdrop-blur-md fixed px-5 lg:px-8 xl:px-10 py-4 flex items-center justify-end md:justify-between  z-50 md:border-b md:border-dashed md:border-gray-500">
-                
                 <ul className="hidden sm:flex justify-center items-center gap-5 lg:gap-8  px-6 sm:px-8 lg:px-12 py-2.5 ">
                     <li>
-                        <a
-                            className="font-Ovo hover:text-gray-500"
-                            href="#top">
+                        <a className="font-Ovo hover:text-gray-500" href="#top">
                             Home
                         </a>
                     </li>
@@ -47,12 +51,16 @@ const Navbar = () => {
                 </ul>
 
                 <div className="flex items-center gap-4">
-                    <button>
-                        <Moon className="w-6" />
+                    <button
+                        onClick={() =>
+                            setTheme(theme === "light" ? "dark" : "light")
+                        }
+                        className="p-2 cursor-pointer rounded-lg">
+                        {theme === "light" ? <Moon /> : <Sun />}
                     </button>
                     <a
                         href="#contact"
-                        className="hidden md:flex items-center justify-center gap-2 px-6 sm:px-8 py-2.5 sm:py-3 border border-gray-400 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition text-sm sm:text-base">
+                        className="hidden md:flex items-center justify-center gap-2 px-4 sm:px-6 sm:py-3 border border-gray-400 rounded-xl hover:shadow-2xl shadow-indigo-500/30 hover:scale-[1.02] duration-300 transition text-sm sm:text-base">
                         Contact
                         <UserRoundSearch />
                     </a>
@@ -67,7 +75,9 @@ const Navbar = () => {
                 <ul
                     ref={sideMenuRef}
                     className="flex flex-col md:hidden gap-4 py-20 px-10 fixed top-0 bottom-0 w-64 z-50 h-screen -right-64 bg-gray-100 transition duration-500">
-                    <div className="absolute right-6 top-6 " onClick={closeMenu}>
+                    <div
+                        className="absolute right-6 top-6 "
+                        onClick={closeMenu}>
                         <X className="w-5 cursor-pointer" />
                     </div>
                     <li>

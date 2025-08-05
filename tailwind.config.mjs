@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const config = {
+    darkMode: "class",
     content: [
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
         "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,12 +9,9 @@ const config = {
     theme: {
         extend: {
             colors: {
-                lightHover: "#fcf4ff",
-                darkHover: "#2a004a",
-                darkTheme: "#11001F",
             },
             fontFamily: {
-                Outfit: ["var(--font-outfit)", "sans-serif"],
+                Outfit: ["Outfit", "sans-serif"],
             },
         },
     },
