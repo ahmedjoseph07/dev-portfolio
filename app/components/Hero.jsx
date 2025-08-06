@@ -13,7 +13,7 @@ const Hero = () => {
                     alt="profile_img"
                     className="rounded-full animate cursor-pointer w-24 xs:w-28 sm:w-36 md:w-40 border-6 border-gray-400 shadow-lg"
                 />
-                <span className="absolute -bottom-0 right-1 animate-ping bg-green-500 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full border-2 border-none"></span>
+                <span className="absolute -bottom-0 right-0 animate-ping bg-green-500 w-3 h-3 sm:w-4 sm:h-4 rounded-full border-2 border-none"></span>
             </div>
 
             <h3 className="flex animate-pulse flex-wrap items-center justify-center gap-2 text-lg xs:text-xl sm:text-2xl font-medium">
@@ -29,7 +29,7 @@ const Hero = () => {
                 <br className="hidden sm:block" /> based in Chittagong
             </h1>
 
-            <p className="text-gray-600 max-w-md xs:max-w-lg sm:max-w-xl text-md xs:text-base">
+            <p className="text-gray-500 max-w-md xs:max-w-lg sm:max-w-xl text-md xs:text-base">
                 Passionate about crafting robust backend systems, designing
                 efficient databases, and building scalable applications with
                 clean architecture.

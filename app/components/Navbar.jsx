@@ -18,32 +18,33 @@ const Navbar = () => {
         sideMenuRef.current.style.transform = `translateX(16rem)`;
     };
 
+
     return (
         <>
             <nav className="w-full backdrop-blur-md fixed px-5 lg:px-8 xl:px-10 py-4 flex items-center justify-end md:justify-between  z-50 md:border-b md:border-dashed md:border-gray-500">
                 <ul className="hidden sm:flex justify-center items-center gap-5 lg:gap-8  px-6 sm:px-8 lg:px-12 py-2.5 ">
                     <li>
-                        <a className="font-Ovo hover:text-gray-500" href="#top">
+                        <a className="hover:text-gray-500" href="#top">
                             Home
                         </a>
                     </li>
                     <li>
                         <a
-                            className="font-Ovo hover:text-gray-500"
+                            className="hover:text-gray-500"
                             href="#about">
                             About Me
                         </a>
                     </li>
                     <li>
                         <a
-                            className="font-Ovo hover:text-gray-500"
+                            className="hover:text-gray-500"
                             href="#services">
                             Services
                         </a>
                     </li>
                     <li>
                         <a
-                            className="font-Ovo hover:text-gray-500"
+                            className="hover:text-gray-500"
                             href="#projects">
                             My Projects
                         </a>

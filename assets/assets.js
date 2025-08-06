@@ -31,6 +31,7 @@ import {
     SiPostman,
     SiPostgresql,
     SiSupabase,
+    SiPrisma,
 } from "react-icons/si";
 
 export const assets = {
@@ -40,14 +41,34 @@ export const assets = {
 
 export const workData = [
     {
-        title: "Dormi_Dine",
-        description: "Full Stack React.js Project",
+        title: "DormiDine - A Role Based Meal Management System",
+        type: "Full Stack React.js Project",
+        description:
+            "A smart dining management system allowing students to register, view daily meals, and track expenses, with an intuitive and responsive UI for both users and admins.",
         bgImage: "/work-1.jpg",
+        clientCode: "https://github.com/ahmedjoseph07/dormi-dine-client",
+        serverCode: "https://github.com/ahmedjoseph07/dormi-dine-server",
+        liveLink: "https://dormi-dine.web.app/",
     },
     {
-        title: "Expensio",
-        description: "Full Stack Next.js Project",
+        title: "Expensio - An AI Powered Budget Planning System",
+        type: "Full Stack Next.js Project",
+        description:
+            "A modern budget management platform for tracking income and expenses, visualizing spending patterns, and managing accounts securely with authentication and cloud data storage.",
         bgImage: "/work-2.jpg",
+        clientCode: "https://github.com/ahmedjoseph07/expensio",
+        serverCode: "https://github.com/ahmedjoseph07/expensio",
+        liveLink: "https://www.expensio-app.xyz/",
+    },
+    {
+        title: "Recommendo - A Interactive Recommedation System ",
+        type: "Full Stack React.js Project",
+        description:
+            "An intelligent recommendation platform where users can share queries, receive personalized suggestions, and interact with a community through an easy-to-use interface.",
+        bgImage: "/work-3.jpg",
+        clientCode: "https://github.com/ahmedjoseph07/recommendo-client",
+        serverCode: "https://github.com/ahmedjoseph07/recommendo-server",
+        liveLink: "https://recommendo-91de5.web.app/",
     },
 ];
 
@@ -57,48 +78,47 @@ export const serviceData = [
         title: "Backend Development",
         description:
             "Designing and building robust, scalable server-side applications with Node.js, Express & Next.js",
-        link: "",
     },
     {
         icon: <Database />,
         title: "Database Design & Optimization",
         description:
             "Structuring and optimizing databases like MongoDB for efficiency, scalability, and security.",
-        link: "",
     },
     {
         icon: <LayoutTemplate />,
         title: "API Development",
         description:
             "Creating secure and well-documented RESTful APIs for seamless data communication.",
-        link: "",
     },
     {
         icon: <Palette />,
         title: "System Architecture",
         description:
             "Planning clean, maintainable, and scalable software architectures for long-term projects.",
-        link: "",
+    },
+    {
+        icon: <Code2 />,
+        title: "Frontend Development",
+        description:
+            "Building modern, responsive, and user‑friendly interfaces with React.js, Next.js, and Tailwind CSS.",
     },
 ];
 
 export const infoList = [
     {
         icon: <Code2 />,
-        iconDark: <Code2 />,
         title: "Core Skills",
         description:
             "Node.js, Express.js, Next.js, MongoDB, PostgreSQL, Firebase, REST APIs, Database Design, System Design",
     },
     {
         icon: <GraduationCap />,
-        iconDark: <GraduationCap />,
         title: "Education",
         description: "B.Sc. in Petroleum & Mining Engineering – CUET",
     },
     {
         icon: <FolderGit2 />,
-        iconDark: <FolderGit2 />,
         title: "Projects",
         description: "2+ Industry-level fullstack projects",
     },
@@ -130,6 +150,7 @@ export const toolsData = [
 
     // Extra
     { icon: Server, title: "Servers" },
-    { icon: Cpu, title: "Optimization" },
-    { icon: TerminalSquare, title: "CLI Tools" },
+    { icon: Cpu, title: "Databases" },
+    { icon: TerminalSquare, title: "AI Tools" },
+    { icon: SiPrisma, title: "Prisma" },
 ];

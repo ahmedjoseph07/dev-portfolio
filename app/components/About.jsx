@@ -25,7 +25,7 @@ const About = () => {
                 </div>
 
                 <div className="flex-1">
-                    <p className="mb-10 max-w-2xl leading-8 text-lg text-justify">
+                    <p className="mb-10 max-w-2xl leading-7 text-md text-center text-gray-500" >
                         I’m{" "}
                         <span className="animate-pulse font-bold">
                             Joseph Ahmed
@@ -56,9 +56,9 @@ const About = () => {
                         </span>
                         .
                     </p>
-                    <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl ">
+                    <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl  ">
                         {infoList.map(
-                            ({ icon, iconDark, title, description }, idx) => (
+                            ({ icon, title, description }, idx) => (
                                 <li
                                     key={idx}
                                     className="border hover:bg-gray-500 border-gray-500 rounded-xl cursor-pointer px-4 py-6 hover:shadow-2xl shadow-indigo-500/30 hover:scale-[1.02] transition-all duration-300 ease-in-out">
@@ -66,7 +66,7 @@ const About = () => {
                                     <h3 className="my-4 font-semibold text-darkHover text-xl">
                                         {title}
                                     </h3>
-                                    <p className="text-test bg-test text-sm">
+                                    <p className="text-sm">
                                         {description}
                                     </p>
                                 </li>
