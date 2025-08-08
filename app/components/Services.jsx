@@ -3,7 +3,7 @@ import React from "react";
 
 const Services = () => {
     return (
-        <div id="services" className="w-full px-8 py-10">
+        <div id="services" className="w-full px-8 py-10 scroll-mt-20">
             <h4 className="text-center mb-2 text-lg animate-bounce">
                 What I Do
             </h4>

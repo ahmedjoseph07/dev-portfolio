@@ -5,7 +5,7 @@ import { VscPreview } from "react-icons/vsc";
 
 const Projects = () => {
     return (
-        <div id="projects" className="w-full px-[12%] py-20 ">
+        <div id="projects" className="w-full px-[12%] py-20 scroll-mt-20">
             <h4 className="text-center mb-2 text-lg animate-bounce">
                 My Works
             </h4>
