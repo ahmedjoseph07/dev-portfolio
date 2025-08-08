@@ -9,14 +9,14 @@ import Services from "./components/Services";
 
 export default function Home() {
     return (
-        <>
+        <div>
             <Navbar/>
             <Hero/>
-            <About/>
+            <About />
             <Services/>
             <Projects/>
             <Contact/>
             <Footer/>
-        </>
+        </div>
     );
 }

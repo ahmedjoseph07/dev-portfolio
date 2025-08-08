@@ -20,9 +20,9 @@ const Navbar = () => {
 
 
     return (
-        <>
-            <nav className="w-full backdrop-blur-md fixed px-5 lg:px-8 xl:px-10 py-4 flex items-center justify-end md:justify-between  z-50 md:border-b md:border-dashed md:border-gray-500">
-                <ul className="hidden sm:flex justify-center items-center gap-5 lg:gap-8  px-6 sm:px-8 lg:px-12 py-2.5 ">
+        <div>
+            <nav className="w-full fixed backdrop-blur-md px-5 lg:px-8 xl:px-10 py-4 flex items-center justify-end md:justify-between  z-50 md:border-b md:border-dashed md:border-gray-500">
+                <ul className="hidden sm:flex text-xl justify-center items-center gap-5 lg:gap-8  px-6 sm:px-8 lg:px-12 py-2.5 ">
                     <li>
                         <a className="hover:text-gray-500" href="#top">
                             Home
@@ -51,7 +51,7 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center justify-start">
                     <button
                         onClick={() =>
                             setTheme(theme === "light" ? "dark" : "light")
@@ -66,7 +66,7 @@ const Navbar = () => {
                         <UserRoundSearch />
                     </a>
 
-                    <button className="block md:hidden ml-3" onClick={openMenu}>
+                    <button className="flex md:hidden" onClick={openMenu}>
                         <Menu className="w-6" />
                     </button>
                 </div>
@@ -82,13 +82,13 @@ const Navbar = () => {
                         <X className="w-5 cursor-pointer" />
                     </div>
                     <li>
-                        <a className="font-Ovo" onClick={closeMenu} href="#top">
+                        <a onClick={closeMenu} href="#top">
                             Home
                         </a>
                     </li>
                     <li>
                         <a
-                            className="font-Ovo"
+
                             onClick={closeMenu}
                             href="#about">
                             About Me
@@ -96,7 +96,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            className="font-Ovo"
+
                             onClick={closeMenu}
                             href="#services">
                             Services
@@ -104,7 +104,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            className="font-Ovo"
+
                             onClick={closeMenu}
                             href="#projects">
                             My Projects
@@ -112,7 +112,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            className="font-Ovo"
+
                             onClick={closeMenu}
                             href="#contact">
                             Contact Me
@@ -120,7 +120,7 @@ const Navbar = () => {
                     </li>
                 </ul>
             </nav>
-        </>
+        </div>
     );
 };
 

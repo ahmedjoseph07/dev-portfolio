@@ -2,39 +2,21 @@ import { workData } from "@/assets/assets";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { VscPreview } from "react-icons/vsc";
-import { motion } from "motion/react";
-
 
 const Projects = () => {
     return (
-        <div id="projects" className="w-full px-[12%] py-20 scroll-mt-20">
-            <motion.h4
-                className="text-center mb-2 text-lg animate-bounce"
-                initial={{ y: -20, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                >
+        <div id="projects" className="w-full px-[12%] py-20 ">
+            <h4 className="text-center mb-2 text-lg animate-bounce">
                 My Works
-            </motion.h4>
+            </h4>
 
-            <motion.h2
-                className="text-center text-4xl font-bold"
-                initial={{ y: -30, opacity: 0 }}
-                whileInView={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.7, delay: 0.3 }}>
-                Projects I Built
-            </motion.h2>
+            <h2 className="text-center text-4xl font-bold">Projects I Built</h2>
 
-            <motion.p
-                className="text-center max-w-2xl mx-auto mt-5 mb-12 text-gray-500"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                viewport={{ once: true }}>
+            <p className="text-center max-w-2xl mx-auto mt-5 mb-12 text-gray-500">
                 A collection of my featured projects showcasing skills in
                 full‑stack development, from creating interactive user
                 interfaces to building secure and scalable backend systems.
-            </motion.p>
+            </p>
 
             <div className="grid grid-cols-1 my-10 gap-6 max-w-2xl mx-auto">
                 {workData.map(
