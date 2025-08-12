@@ -49,6 +49,18 @@ export const workData = [
         clientCode: "https://github.com/ahmedjoseph07/dormi-dine-client",
         serverCode: "https://github.com/ahmedjoseph07/dormi-dine-server",
         liveLink: "https://dormi-dine.web.app/",
+        techStack: [
+            "React.js",
+            "Firebase",
+            "Tailwind CSS",
+            "DaisyUI",
+            "Express.js",
+            "MongoDB",
+        ],
+        challenges: [
+            "Implementing secure role-based authentication for both students and admins.",
+            "Synchronizing real-time meal updates across multiple user sessions.",
+        ],
     },
     {
         title: "Expensio - An AI Powered Budget Planning System",
@@ -59,9 +71,22 @@ export const workData = [
         clientCode: "https://github.com/ahmedjoseph07/expensio",
         serverCode: "https://github.com/ahmedjoseph07/expensio",
         liveLink: "https://www.expensio-app.xyz/",
+        techStack: [
+            "Next.js",
+            "Tailwind CSS",
+            "Supabase",
+            "PostgreSQL",
+            "Clerk",
+            "Recharts",
+        ],
+        challenges: [
+            "Designing interactive financial charts with real-time data updates.",
+            "Handling secure authentication and authorization with Clerk, the deployment part was a little tough.",
+            "Optimizing aggregation queries for analytics.",
+        ],
     },
     {
-        title: "Recommendo - A Interactive Recommedation System ",
+        title: "Recommendo - An Interactive Recommendation System",
         type: "Full Stack React.js Project",
         description:
             "An intelligent recommendation platform where users can share queries, receive personalized suggestions, and interact with a community through an easy-to-use interface.",
@@ -69,6 +94,17 @@ export const workData = [
         clientCode: "https://github.com/ahmedjoseph07/recommendo-client",
         serverCode: "https://github.com/ahmedjoseph07/recommendo-server",
         liveLink: "https://recommendo-91de5.web.app/",
+        techStack: [
+            "React.js",
+            "Tailwind CSS",
+            "Express.js",
+            "MongoDB",
+            "JWT Auth",
+        ],
+        challenges: [
+            "Ensuring scalable backend performance for multiple requests.",
+            "Using JWT for authorization for the first time"
+        ],
     },
 ];
 
@@ -120,7 +156,7 @@ export const infoList = [
     {
         icon: <FolderGit2 />,
         title: "Projects",
-        description: "2+ Industry-level fullstack projects",
+        description: "3+ Industry-level fullstack projects",
     },
 ];
 

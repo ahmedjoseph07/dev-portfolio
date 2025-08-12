@@ -1,4 +1,5 @@
 import { workData } from "@/assets/assets";
+import Link from "next/link";
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { VscPreview } from "react-icons/vsc";
@@ -23,7 +24,6 @@ const Projects = () => {
                     (
                         {
                             title,
-                            description,
                             bgImage,
                             clientCode,
                             serverCode,
@@ -39,17 +39,18 @@ const Projects = () => {
                             }}
                             className="aspect-square bg-no-repeat bg-cover bg-center rounded-xl relative cursor-pointer group overflow-hidden hover:scale-[1.02] transition-all duration-500 ease-in-out shadow-lg">
                             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                            <div className="bg-white/90 mb-2 h-55 backdrop-blur-sm w-11/12 rounded-lg absolute bottom-5 left-1/2 -translate-x-1/2 py-4 px-5 flex flex-col gap-3 shadow-lg group-hover:translate-y-[-5px] transition-all duration-500">
+                            <Link
+                                href={`/project/${idx}`}
+                                className="mt-3 w-1/3 text-center text-xs md:text-sm px-3 py-2 rounded-md border bg-black mx-auto right-2 absolute text-white transition-colors">
+                                View Details
+                            </Link>
+                            <div className="bg-white/90 mb-2 sm:space-y-4 backdrop-blur-sm w-11/12 rounded-lg absolute bottom-5 left-1/2 -translate-x-1/2 py-4 px-5 flex flex-col gap-3 shadow-lg group-hover:translate-y-[-5px] transition-all duration-500">
                                 <div>
-                                    <h2 className="text-md font-extrabold text-black">
+                                    <h2 className="text-md  font-extrabold text-black">
                                         {title}
                                     </h2>
-                                    <p className="font-semibold text-black">
+                                    <p className="font-semibold hidden sm:block text-black">
                                         {type}
-                                    </p>
-                                    <p className="font-medium hidden md:block text-gray-600">
-                                        {description}
                                     </p>
                                 </div>
 
@@ -60,7 +61,7 @@ const Projects = () => {
                                         rel="noopener noreferrer"
                                         className="flex items-center justify-center gap-2 text-xs md:text-sm px-3 py-1 rounded-md bg-black text-white hover:bg-gray-800 transition-colors">
                                         <FaGithub className="w-4 h-4" /> Client
-                                        Code
+                                        
                                     </a>
                                     <a
                                         href={serverCode}
@@ -68,7 +69,7 @@ const Projects = () => {
                                         rel="noopener noreferrer"
                                         className="flex items-center justify-center gap-2 text-xs md:text-sm px-3 py-1 rounded-md bg-black text-white hover:bg-gray-800 transition-colors">
                                         <FaGithub className="w-4 h-4" /> Server
-                                        Code
+                                        
                                     </a>
                                     <a
                                         href={liveLink}
