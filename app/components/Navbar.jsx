@@ -56,7 +56,7 @@ const Navbar = () => {
                         onClick={() =>
                             setTheme(theme === "light" ? "dark" : "light")
                         }
-                        className="p-2 cursor-pointer rounded-lg">
+                        className="p-2 cursor-pointer rounded-lg mr-2 transition duration-300 hover:scale-150 ">
                         {theme === "light" ? <Moon /> : <Sun />}
                     </button>
                     <a
