@@ -1,5 +1,6 @@
 import { MessageCircle } from "lucide-react";
 import React, { useRef, useState } from "react";
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
     const [result, setResult] = useState("");
@@ -94,6 +95,25 @@ const Contact = () => {
                     <MessageCircle /> Send Message
                 </button>
 
+                <hr className="w-full border-gray-300" />
+                <div className="flex flex-wrap gap-4 justify-center">
+                    <a
+                        href="https://linkedin.com/in/ahmedjoseph07"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center border gap-2 px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl cursor-pointer hover:shadow-2xl shadow-indigo-500/30 hover:scale-[1.02] duration-300 transition text-sm sm:text-base">
+                        <FaLinkedin /> LinkedIn
+                    </a>
+                  
+                    <a
+                        href="https://wa.me/8801752025146"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center border gap-2 px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl cursor-pointer hover:shadow-2xl shadow-indigo-500/30 hover:scale-[1.02] duration-300 transition text-sm sm:text-base">
+                        <FaWhatsapp /> WhatsApp
+                    </a>
+                   
+                </div>
                 <p className="my-4">{result}</p>
             </form>
         </div>

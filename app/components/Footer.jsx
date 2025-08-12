@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="flex flex-wrap items-center justify-center gap-6 text-gray-500">
                     <a
                         href="mailto:ahmedjoseph11@gmail.com"
-                        className="flex items-center gap-2 hover:text-gray-800 hover:scale-110 transition-transform duration-200">
+                        className="flex items-center gap-2 hover:text-gray-500 hover:scale-110 transition-transform duration-200">
                         <FaEnvelope size={18} />
                         <span>Email</span>
                     </a>
@@ -21,7 +21,7 @@ const Footer = () => {
                         href="https://github.com/ahmedjoseph07"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 hover:text-gray-800 hover:scale-110 transition-transform duration-200">
+                        className="flex items-center gap-2 hover:text-gray-500 hover:scale-110 transition-transform duration-200">
                         <FaGithub size={18} />
                         <span>GitHub</span>
                     </a>
@@ -29,7 +29,7 @@ const Footer = () => {
                         href="https://wa.me/8801752025146"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 hover:text-gray-800 hover:scale-110 transition-transform duration-200">
+                        className="flex items-center gap-2 hover:text-gray-500 hover:scale-110 transition-transform duration-200">
                         <FaWhatsapp size={18} />
                         <span>WhatsApp</span>
                     </a>
