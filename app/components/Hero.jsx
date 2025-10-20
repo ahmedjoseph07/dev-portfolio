@@ -24,12 +24,12 @@ const Hero = () => {
             </h3>
 
             <h1 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-snug hover:scale-[1.01] transition duration-300 cursor-pointer">
-                Backend Developer & Database Architect
+                Full Stack Developer & Database Architect
                 <br className="hidden sm:block" /> based in Chittagong
             </h1>
 
             <p className="text-gray-500 max-w-md xs:max-w-lg sm:max-w-xl text-md xs:text-base">
-                Passionate about crafting robust backend systems, designing
+                Passionate about designing web pages, crafting robust backend systems, designing
                 efficient databases, and building scalable applications with
                 clean architecture.
             </p>
@@ -37,6 +37,7 @@ const Hero = () => {
             <div className="text-base xs:text-lg sm:text-xl font-semibold text-gray-500">
                 <Typewriter
                     words={[
+                        "Optimizing Frontend",
                         "Designing RESTful APIs",
                         "Building Secure Backends",
                         "Optimizing Databases",
