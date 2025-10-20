@@ -7,8 +7,8 @@ I'm **Joseph Ahmed**, a **MERN Stack Developer** from **Bangladesh**, passionate
 
 ## 🚀 About Me
 
-- 🧑‍💻 Focused mainly on **Backend Development** with Node.js, Express, and MongoDB  
-- ⚙️ Experienced with **MERN Stack (MongoDB, Express, React, Node.js)**  
+- 🧑‍💻 Focused mainly on **Frontend and Backend Development** with React.js Node.js, Express, and MongoDB  
+- ⚙️ Experienced with **MERN Stack (MongoDB, Express, React, Node.js)**  and Next.js
 - ⚡ Interested in **Cloud & AI technologies**  
 - 🎓 Currently pursuing **BSc in Petroleum Engineering** at **CUET**  
 - 🌱 Learning more about **Computer Networking & System Design**
@@ -24,7 +24,7 @@ React, Next.js, Redux, Tailwind CSS, Bootstrap, Vite
 Node.js, Express.js, REST API, Socket.IO, JWT Auth  
 
 **Database:**  
-MongoDB, Mongoose  
+MongoDB, Mongoose, PostgresSQL 
 
 **Tools & Others:**  
 Firebase, Git, Postman, Vercel 
@@ -57,17 +57,11 @@ Firebase, Git, Postman, Vercel
 
 ## 📫 Contact Me
 
-- 📧 Email: **josephahmed.dev@gmail.com**  
-- 🌐 Portfolio: [josephahmed.vercel.app](https://josephahmed.vercel.app)  
-- 💼 LinkedIn: [linkedin.com/in/josephahmed](https://linkedin.com/in/josephahmed)  
-- 🐙 GitHub: [github.com/josephahmed](https://github.com/josephahmed)
-
+- 📧 Email: **ahmedjoseph11@.com**  
+- 🌐 Portfolio: [josephahmed.vercel.app] (https://dev-portfolio-roan-three.vercel.app/)
+- 💼 LinkedIn: [linkedin.com/in/josephahmed](https://linkedin.com/in/ahmedjoseph07)  
 ---
 
-## 🧠 Fun Fact
 
-> “Code, coffee, and curiosity — that’s my debugging fuel ☕💻”
-
----
 
 ⭐ **Feel free to explore my projects and connect if you’d like to collaborate!**
