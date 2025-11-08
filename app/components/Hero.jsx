@@ -24,7 +24,7 @@ const Hero = () => {
             </h3>
 
             <h1 className="text-xl xs:text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-snug hover:scale-[1.01] transition duration-300 cursor-pointer">
-                Full Stack Developer & Database Architect
+                Backend Developer & Database Architect
                 <br className="hidden sm:block" /> based in Chittagong
             </h1>
 
